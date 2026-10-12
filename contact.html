@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- ===== SEO ===== -->
+  <title>Contact Us | Guru Dosai Restaurant – 64 Buthgamuwa Rd, Kotte</title>
+  <meta name="description" content="Contact Guru Dosai Restaurant, a pure vegetarian South Indian restaurant at 64 Buthgamuwa Rd, Sri Jayawardenepura Kotte. Call 076 397 3883, send a message or find us on the map.">
+  <meta name="keywords" content="Guru Dosai contact, vegetarian restaurant Kotte address, South Indian restaurant Buthgamuwa Road, 076 397 3883, reserve a table Kotte">
+  <meta name="theme-color" content="#FFC107">
+  <link rel="canonical" href="https://www.your-domain.com/contact.html"><!-- TODO: your domain -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Contact Us | Guru Dosai Restaurant">
+  <meta property="og:description" content="Find us at 64 Buthgamuwa Rd, Sri Jayawardenepura Kotte, or call 076 397 3883.">
+  <meta property="og:image" content="https://www.your-domain.com/assets/images/og-image.jpg">
+  <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Noto+Sans+Tamil:wght@600&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <!-- ===== HEADER (same on every page) ===== -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="Guru Dosai Restaurant, home">
+        <img src="assets/images/logo.svg" alt="" width="44" height="44">
+        <span class="brand-text"><strong>Guru Dosai</strong><small>Pure Vegetarian</small></span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+      <nav id="primary-nav" class="primary-nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="contact.html" aria-current="page">Contact Us</a></li>
+        </ul>
+        <a class="btn btn-dark btn-sm" href="tel:+94763973883"><span class="ico i-phone" aria-hidden="true"></span>Call to Order</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <section class="page-head">
+      <div class="hero-leaf" aria-hidden="true"></div>
+      <div class="container">
+        <h1>Contact Us</h1>
+        <p>Call to order, reserve a table, or send us a message.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container contact-grid">
+
+        <!-- ===== CONTACT FORM ===== -->
+        <div class="form-card">
+          <h2>Send us a message</h2>
+          <!-- novalidate: validation is handled in script.js so error messages look consistent.
+               Where messages go is set in script.js (SETTINGS.formEndpoint / contactEmail). -->
+          <form id="contact-form" novalidate>
+            <div class="form-row">
+              <label for="name">Your name</label>
+              <input type="text" id="name" name="name" autocomplete="name" required aria-describedby="name-error">
+              <span class="field-error" id="name-error" aria-live="polite"></span>
+            </div>
+            <div class="form-split">
+              <div class="form-row">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" autocomplete="email" required aria-describedby="email-error">
+                <span class="field-error" id="email-error" aria-live="polite"></span>
+              </div>
+              <div class="form-row">
+                <label for="phone">Phone <span class="optional">(optional)</span></label>
+                <input type="tel" id="phone" name="phone" autocomplete="tel" aria-describedby="phone-error">
+                <span class="field-error" id="phone-error" aria-live="polite"></span>
+              </div>
+            </div>
+            <div class="form-row">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" required aria-describedby="message-error"></textarea>
+              <span class="field-error" id="message-error" aria-live="polite"></span>
+            </div>
+            <!-- Spam trap: leave empty. Real visitors never see it. -->
+            <div class="hp" aria-hidden="true"><label>Company <input type="text" name="company" tabindex="-1" autocomplete="off"></label></div>
+
+            <button class="btn btn-dark" type="submit">Send message</button>
+            <div id="form-status" class="form-status" role="status" aria-live="polite"></div>
+          </form>
+        </div>
+
+        <!-- ===== DETAILS + MAP ===== -->
+        <div>
+          <h2>Visit or call us</h2>
+          <p class="status" data-open-status role="status">Checking…</p>
+          <ul class="info-list">
+            <li><span class="ico i-pin" aria-hidden="true"></span><span><strong>Address</strong><br>64 Buthgamuwa Rd,<br>Sri Jayawardenepura Kotte</span></li>
+            <li><span class="ico i-phone" aria-hidden="true"></span><span><strong>Phone</strong><br><a href="tel:+94763973883">076 397 3883</a></span></li>
+            <!-- TODO: replace with the restaurant's real email (also in script.js → SETTINGS.contactEmail) -->
+            <li><span class="ico i-mail" aria-hidden="true"></span><span><strong>Email</strong><br><a href="mailto:info@your-domain.com">info@your-domain.com</a></span></li>
+            <!-- TODO: edit hours here, in script.js and in the footers -->
+            <li><span class="ico i-clock" aria-hidden="true"></span>
+              <span><strong>Opening hours</strong>
+                <table class="hours-table" style="margin-top:.4rem">
+                  <tbody>
+                    <tr data-day="1"><th scope="row">Mon</th><td>11:00 AM – 10:00 PM</td></tr>
+                    <tr data-day="2"><th scope="row">Tue</th><td>11:00 AM – 10:00 PM</td></tr>
+                    <tr data-day="3"><th scope="row">Wed</th><td>11:00 AM – 10:00 PM</td></tr>
+                    <tr data-day="4"><th scope="row">Thu</th><td>11:00 AM – 10:00 PM</td></tr>
+                    <tr data-day="5"><th scope="row">Fri</th><td>11:00 AM – 10:00 PM</td></tr>
+                    <tr data-day="6"><th scope="row">Sat</th><td>11:00 AM – 10:00 PM</td></tr>
+                    <tr data-day="0"><th scope="row">Sun</th><td>11:00 AM – 10:00 PM</td></tr>
+                  </tbody>
+                </table>
+              </span>
+            </li>
+          </ul>
+          <a class="btn" href="tel:+94763973883"><span class="ico i-phone" aria-hidden="true"></span>Call to Reserve a Table</a>
+        </div>
+      </div>
+
+      <!-- ===== GOOGLE MAP =====
+           This simple embed works without an API key and searches by address.
+           For an exact pin: open Google Maps → find the restaurant → Share → Embed a map → copy the src="..." URL
+           and paste it over the src below. -->
+      <div class="container">
+        <div class="map-wrap">
+          <iframe title="Map showing Guru Dosai Restaurant at 64 Buthgamuwa Rd, Sri Jayawardenepura Kotte"
+            src="https://maps.google.com/maps?q=64%20Buthgamuwa%20Rd%2C%20Sri%20Jayawardenepura%20Kotte%2C%20Sri%20Lanka&output=embed"
+            loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== FOOTER (same on every page) ===== -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <div class="footer-brand"><img src="assets/images/logo.svg" alt="" width="44" height="44"><strong>Guru Dosai</strong></div>
+        <p>Authentic South Indian Vegetarian Flavors, made fresh every day.</p>
+        <div class="social">
+          <a href="https://www.facebook.com/YOUR-PAGE" aria-label="Guru Dosai on Facebook" target="_blank" rel="noopener"><span class="ico i-facebook" aria-hidden="true"></span></a>
+          <a href="https://www.instagram.com/YOUR-HANDLE" aria-label="Guru Dosai on Instagram" target="_blank" rel="noopener"><span class="ico i-instagram" aria-hidden="true"></span></a>
+          <a href="https://wa.me/94763973883" aria-label="Chat with Guru Dosai on WhatsApp" target="_blank" rel="noopener"><span class="ico i-whatsapp" aria-hidden="true"></span></a>
+        </div>
+      </div>
+      <div>
+        <h3>Quick links</h3>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="assets/menu.pdf" download="menu.pdf">Download menu (PDF)</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Contact</h3>
+        <ul class="footer-contact">
+          <li><span class="ico i-pin" aria-hidden="true"></span><span>64 Buthgamuwa Rd,<br>Sri Jayawardenepura Kotte</span></li>
+          <li><span class="ico i-phone" aria-hidden="true"></span><a href="tel:+94763973883">076 397 3883</a></li>
+          <li><span class="ico i-mail" aria-hidden="true"></span><a href="mailto:info@your-domain.com">info@your-domain.com</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Opening hours</h3>
+        <ul class="footer-contact">
+          <li><span class="ico i-clock" aria-hidden="true"></span><span>Monday – Sunday<br>11:00 AM – 10:00 PM</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>© <span data-year>2026</span> Guru Dosai Restaurant. All rights reserved.</p>
+      <p>Pure vegetarian · South Indian · Kotte, Sri Lanka</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
